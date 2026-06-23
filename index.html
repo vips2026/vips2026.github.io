@@ -366,58 +366,6 @@
 <!-- End benchmark construction carousel -->
 
 
-<!-- Main results -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Results</h2>
-        <div class="content has-text-justified">
-          <p>
-            We evaluate representative E2E-AD planners &mdash; UniAD, SparseDrive, HiP-AD, MomAD, AD-MLP &mdash; together
-            with the cooperative Uni-V2X and our CoS-V2X on the VIPS pseudo-simulation benchmark, reporting Stage&nbsp;1
-            (real observations), Stage&nbsp;2 (synthetic observations), and the integrated EPDMS score over a 5-second
-            horizon.
-          </p>
-        </div>
-        <div class="table-container">
-          <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-            <thead>
-              <tr>
-                <th>Method</th>
-                <th>V2I</th>
-                <th>Stage&nbsp;1 EPDMS &uarr;</th>
-                <th>Stage&nbsp;2 EPDMS &uarr;</th>
-                <th>S1 + S2 EPDMS &uarr;</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Human</td><td></td><td>91.55</td><td>&ndash;</td><td>&ndash;</td></tr>
-              <tr><td>Constant Velocity</td><td></td><td>62.39</td><td>68.62</td><td>5.88</td></tr>
-              <tr><td>AD-MLP</td><td></td><td>52.73</td><td>41.90</td><td>32.31</td></tr>
-              <tr><td>UniAD</td><td></td><td>75.26</td><td>69.11</td><td>37.28</td></tr>
-              <tr><td>SparseDrive</td><td></td><td>74.47</td><td>55.74</td><td>43.26</td></tr>
-              <tr><td>HiP-AD</td><td></td><td>75.54</td><td>68.76</td><td>42.03</td></tr>
-              <tr><td>MomAD</td><td></td><td>69.95</td><td>67.48</td><td><u>45.38</u></td></tr>
-              <tr><td>Uni-V2X</td><td>&#10003;</td><td>75.70</td><td>72.35</td><td>43.79</td></tr>
-              <tr><td><strong>CoS-V2X (Ours)</strong></td><td>&#10003;</td><td><strong>78.69</strong></td><td><strong>73.21</strong></td><td><strong>50.88</strong></td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            Cooperative V2I methods consistently outperform single-agent planners, and <strong>CoS-V2X achieves the best
-            overall performance (50.88 final EPDMS)</strong> while requiring lower communication bandwidth than Uni-V2X.
-            The consistent Stage&nbsp;1&rarr;Stage&nbsp;2 drop across methods reflects the difficulty of the perturbed
-            scenarios, with cooperative methods showing improved robustness thanks to the additional spatial context from
-            infrastructure viewpoints.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End main results -->
 
 
 <!--BibTex citation -->
