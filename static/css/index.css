@@ -274,6 +274,13 @@ body {
   align-items: center;
 }
 
+/* Center each slide's card vertically within the (tallest-slide) track height */
+.results-carousel .slider-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .results-carousel .item:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
